@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Author {
 
     private String name;
@@ -8,18 +10,26 @@ public class Author {
         this.name = name;
         this.patronymic = patronymic;
         this.surname = surname;
+
     }
+
 
 
     public String getName() {
         return this.name;
     }
+
+
     public String getPatronymic(){
         return this.patronymic;
     }
 
     public String getSurname() {
         return this.surname;
+    }
+    public void display(){
+
+        System.out.println(name + patronymic + surname);
     }
 }
 
