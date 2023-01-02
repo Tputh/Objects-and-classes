@@ -13,8 +13,8 @@ public class Main{
         data0.setYear(1995);
         System.out.println("Год издания - " + data0.getYear() + "г");
 
-        Author name0 =  new Author("Харуки Мураками");
-        System.out.println("Автор - " + name0.getName());
+        Author name0 =  new Author("Харуки ","" , "Мураками");
+        System.out.println("Автор - " + name0.getName() + name0.getPatronymic() + name0.getSurname());
 
         System.out.println("========================");
         System.out.println("========================");
@@ -24,8 +24,8 @@ public class Main{
         System.out.println("Год издания - " + data1.getYear() + "г");
 
 
-        Author name1 = new Author("Габриэля Гарсиа Маркеса");
-        System.out.println("Автор - " + name1.getName());
+        Author name1 = new Author("Габриэля ","Гарсиа ","Маркеса ");
+        System.out.println("Автор - " + name1.getName() + name1.getPatronymic() + name1.getSurname());
 
     }
 

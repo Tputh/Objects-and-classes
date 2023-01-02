@@ -17,9 +17,5 @@ public class Book {
     public void setYear(int year){
         this.year =year;
     }
-    public void setTitle(String title){
-        this.title = title;
-    }
-
 }
 
