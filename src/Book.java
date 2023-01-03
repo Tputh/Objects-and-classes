@@ -1,26 +1,30 @@
-public class Book extends Author {
+public class Book  {
     private String title;
-    private int year;
+    private int publishedYear;
+    private Author author;
 
 
-    public Book(String name, String patronymic, String surname, String title, int year){
-        super(name, patronymic, surname);
+
+    public Book ( String title, int publishedYear, Author author){
+        this.author = author;
         this.title = title;
-        this.year = year;
+        this.publishedYear = publishedYear;
     }
 
     public String getTitle() {
         return this.title;
     }
     public int getYear() {
-        return this.year;
+        return this.publishedYear;
     }
 
-    public void setYear(int year){
-        this.year = year;
+    public void setYear(int publishedYear){
+        this.publishedYear = publishedYear;
     }
-    public void display(){
-        System.out.println("Автор - " + super.getName() + super.getPatronymic() + super.getSurname() +  ";" + " Название книги - " + title + ";" + " Год издания  - " + year);
+
+    public Author author() {
+        return this.author();
     }
+
 }
 

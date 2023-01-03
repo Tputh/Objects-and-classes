@@ -27,10 +27,7 @@ public class Author {
     public String getSurname() {
         return this.surname;
     }
-    public void display(){
 
-        System.out.println(name + patronymic + surname);
-    }
 }
 
 
